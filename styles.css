@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1C3870; /*#333*/
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -11,22 +11,23 @@ body {
 }
 
 header {
-    background-color: #1da0dd;
+    background-color: white; /*#0056A1; #3366CC*/
     padding: 1rem;
     height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 header h1 {
-    color: white;
+    color: #1C3870; /*white*/
     text-align: center;
+    font-weight: bold;
 }
 
 nav {
-    background-color: #333;
+    background-color: #3366CC; /*#1da0dd#0056A1; #333*/
     padding: 0.5rem;
 }
 
@@ -43,7 +44,8 @@ nav ul li a {
 
 main {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -53,24 +55,32 @@ main {
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 section[id] {
     scroll-margin-top: 70px;
 }
 
-.section-text {
-  width: 80%;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
+.acerca {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 2rem; /* Agrega un poco de espacio alrededor */
 }
 
-.sectio-image{
-    width: 45%;
+.section-text {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 800px; /* Limita el ancho máximo para evitar que se expanda demasiado */
     border: 1px solid #ccc;
-    text-align: center;
+    padding: 1rem;
+    text-align: left; /* Cambia a left para mejorar la legibilidad */
+    border-radius: 10px;
+}
+
+.titulo-acerca {
+    text-align: center; /* Centra el título "Acerca de nosotros" */
+    font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+    margin-bottom: 1rem; /* Espacio debajo del título */
 }
 
 section h2 {
@@ -79,7 +89,7 @@ section h2 {
 }
 
 button {
-    background-color: #1da0dd;
+    background-color: #182F5E;/* #0056A1#1da0dd;*/
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -90,7 +100,7 @@ button {
 }
 
 footer {
-    background-color: #333;
+    background-color: #3366CC; /*#333*/
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -111,7 +121,6 @@ footer ul li a {
     color: white;
     text-decoration: none;
 }
-
 
 .justificar {
     text-align: justify;
@@ -141,12 +150,12 @@ footer ul li a {
     background-color: #28e76e;
 }
 
-
 /* Imagenes */
 .image-container {
     display: flex;
     justify-content: space-around;
     width: 80%;
+    margin-bottom: 1rem;
 }
 
 .image {
@@ -156,5 +165,18 @@ footer ul li a {
     border-radius: 10px;
 }
 
+footer nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex; /* Para alinear los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+    padding: 0;
+}
 
-/*card*/
+footer nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+footer nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
